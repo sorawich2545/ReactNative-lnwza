@@ -14,7 +14,7 @@ export default function Index() {
 
         {/* flexbox menu */}
         <Text>Flexbox Menu</Text>
-        <FlexboxMenu />
+        <FlexboxMenu/>
 
         <Link href="/travel" style={styles.link}>
           <Text style={styles.linkText}>Travel</Text>
