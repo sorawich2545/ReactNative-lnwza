@@ -1,66 +1,29 @@
+import FlexboxMenu from "@/components/FlexboxMenu";
 import { Link } from "expo-router";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View, TextInput } from "react-native";
 
 export default function Index() {
   return (
-    <ScrollView style={{ flex:1 }}>
-    <View style={styles.container}>
-      <Text>Edit app/index.tsx to edit this screen. Sorawich</Text>
-      {/* main menu */}
-      <Link href="/page2" style={styles.link}>
-        <Text style={styles.linkText}>ไปหน้าหลัก</Text>
-      </Link>
-      
-      {/* flexbox menu */}
-      <Link href="/flexbox/EX 01" style={styles.link}>
-        <Text style={styles.linkText}>Ex 01</Text>
-      </Link>
+    <ScrollView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <Text>Edit app/index.tsx to edit this screen. Sorawich</Text>
+        {/* main menu */}
+        <Link href="/page2" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้าหลัก</Text>
+        </Link>
 
-      <Link href="/flexbox/EX 02" style={styles.link}>
-        <Text style={styles.linkText}>Ex 02</Text>
-      </Link>
+        {/* flexbox menu */}
+        <Text>Flexbox Menu</Text>
+        <FlexboxMenu />
 
-      <Link href="/flexbox/EX 03" style={styles.link}>
-        <Text style={styles.linkText}>Ex 03</Text>
-      </Link>
+        <Link href="/travel" style={styles.link}>
+          <Text style={styles.linkText}>Travel</Text>
+        </Link>
 
-      <Link href="/flexbox/EX 04" style={styles.link}>
-        <Text style={styles.linkText}>Ex 04</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 05" style={styles.link}>
-        <Text style={styles.linkText}>Ex 05</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 06" style={styles.link}>
-        <Text style={styles.linkText}>Ex 06</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 07" style={styles.link}>
-        <Text style={styles.linkText}>Ex 07</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 08" style={styles.link}>
-        <Text style={styles.linkText}>Ex 08</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 09" style={styles.link}>
-        <Text style={styles.linkText}>Ex 09</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 10" style={styles.link}>
-        <Text style={styles.linkText}>Ex 10</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 11" style={styles.link}>
-        <Text style={styles.linkText}>Ex 11</Text>
-      </Link>
-
-      <Link href="/flexbox/EX 12" style={styles.link}>
-        <Text style={styles.linkText}>Ex 12</Text>
-      </Link>
-
-    </View>
+        <Link href="/resort" style={styles.link}>
+          <Text style={styles.linkText}>Resort</Text>
+        </Link>
+      </View>
     </ScrollView>
   );
 }
