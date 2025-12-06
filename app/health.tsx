@@ -1,0 +1,23 @@
+import React from "react";
+import { Keyboard, TouchableWithoutFeedback, View } from "react-native";
+import Heartbeat from "@/components/Week05/Heartbeat";
+import Bmi from "@/components/Week05/Bmi";
+import { dismiss } from "expo-router/build/global-state/routing";
+
+export default function Health() {
+  return (
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: "lightblue",
+          justifyContent: "center",
+          padding: 20,
+        }}
+      >
+        <Bmi />
+        <Heartbeat />
+      </View>
+    </TouchableWithoutFeedback>
+  );
+}

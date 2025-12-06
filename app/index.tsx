@@ -6,6 +6,7 @@ export default function Index() {
   return (
     <ScrollView style={{ flex: 1 }}>
       <View style={styles.container}>
+        
         <Text>Edit app/index.tsx to edit this screen. Sorawich</Text>
         {/* main menu */}
         <Link href="/page2" style={styles.link}>
@@ -23,6 +24,11 @@ export default function Index() {
         <Link href="/resort" style={styles.link}>
           <Text style={styles.linkText}>Resort</Text>
         </Link>
+
+        <Link href="/health" style={styles.link}>
+          <Text style={styles.linkText}>คำนวนค่า BMI</Text>
+        </Link>
+
       </View>
     </ScrollView>
   );
